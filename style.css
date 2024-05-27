@@ -1,38 +1,86 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #f1f1f1; /* Light gray background */
+    color: #333; /* Dark gray text */
     font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #333; /* Dark background for sidebar */
+    padding-top: 20px; /* Space for icons */
+    transition: width 0.5s; /* Smooth transition effect */
+    z-index: 1; /* Ensure sidebar is above content */
+}
+
+.category {
+    padding: 10px;
+    text-align: center; /* Center icon */
+}
+
+.category a {
+    display: block;
+    margin-bottom: 20px; /* Space between icons */
+    opacity: 0.7; /* Initial opacity for icons */
+    transition: opacity 0.3s; /* Smooth transition effect */
+}
+
+.category a:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.content {
+    margin-left: 120px; /* Leave space for sidebar */
+    padding: 20px;
 }
 
 header {
     text-align: center;
+    margin-bottom: 50px; /* Space below header */
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 2.5em; /* Larger header */
+    margin-bottom: 0.2em; /* Less space below header */
+    color: #333; /* Dark gray header text */
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+    font-size: 1.8em; /* Larger subheader */
+    margin-bottom: 0.5em; /* Less space below subheader */
+    color: #555; /* Slightly lighter gray subheader text */
 }
 
 .feature {
-    margin-bottom: 2em;
+    margin-bottom: 40px; /* More space between features */
+    border-bottom: 2px solid #ccc; /* Divider between features */
+    padding-bottom: 20px; /* Space below feature */
+}
+
+.feature h3 {
+    font-size: 1.3em; /* Larger feature title */
+    margin-bottom: 10px; /* Less space below feature title */
+}
+
+.feature p {
+    margin-bottom: 10px; /* Less space below feature content */
 }
 
 .button {
-    background-color: #444;
-    color: #ddd;
+    background-color: #55aaff; /* Blue button */
+    color: white; /* White text */
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Larger button */
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
+    transition: background-color 0.3s; /* Smooth transition effect */
 }
 
 .button:hover {
-    background-color: #55aaff;
+    background-color: #4499ff; /* Darker blue on hover */
 }
