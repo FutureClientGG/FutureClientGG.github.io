@@ -1,82 +1,56 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+    font-size: 36px;
+    font-weight: bold;
 }
 
-h2 {
-    font-size: 1.5em;
-    color: #666;
-}
-
-nav.sidebar {
-    width: 200px;
-    background-color: #333;
-}
-
-nav.sidebar ul {
-    list-style: none;
-    padding: 20px 0;
-}
-
-nav.sidebar li {
-    padding: 10px;
-}
-
-nav.sidebar a {
-    color: #fff;
+nav a {
     text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
+    color: #7289da;
+    margin-left: 20px;
 }
 
-nav.sidebar a:hover {
-    background-color: #555;
-}
-
-main {
-    flex: 1;
-    padding: 20px;
+nav a:hover {
+    text-decoration: underline;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-.feature {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.feature h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.discord-button {
+    display: inline-block;
+    background-color: #7289da;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discord-button:hover {
+    background-color: #677bc4;
 }
