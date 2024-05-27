@@ -5,30 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Client</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Future Client</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#features">Features</a>
-                <a href="#join">Join</a>
-            </nav>
-        </header>
-        <section id="about">
-            <h2>Welcome to Future Client</h2>
-            <!-- The #1 Unified Web Roblox Executor! -->
-        </section>
-        <section id="features">
-            <h2>Why Future Client?</h2>
-            <!-- With our seamless execution its nearly impossible to be detected -->
-        </section>
-        <section id="join">
-            <h2>Join the Future!</h2>
-            <!-- For Updates Join The Discord Server! -->
-            <a href="https://discord.gg/FERD7jkvjm" class="discord-button">Join our Discord Server</a>
-        </section>
+    <div class="sidebar">
+        <div class="logo">Future Client</div>
+        <nav>
+            <a href="#dashboard" class="active"><img src="icons/dashboard.svg" alt="Dashboard">Dashboard</a>
+            <a href="#purchase"><img src="icons/cart.svg" alt="Purchase">Purchase</a>
+            <a href="#tickets"><img src="icons/tickets.svg" alt="Tickets">Tickets</a>
+            <a href="#settings"><img src="icons/settings.svg" alt="Settings">Settings</a>
+            <a href="#logout"><img src="icons/logout.svg" alt="Logout">Logout</a>
+        </nav>
     </div>
+    <div class="main-content">
+        <header>
+            <div class="header-stats">
+                <div class="stat"><img src="icons/user.svg" alt="Users"><span>Total Users</span><strong>76.4k</strong></div>
+                <div class="stat"><img src="icons/launch.svg" alt="Launches"><span>Total Launches</span><strong>662k</strong></div>
+                <div class="stat"><img src="icons/download.svg" alt="Downloads"><span>Total Downloads</span><strong>263k</strong></div>
+                <div class="stat"><img src="icons/version.svg" alt="Version"><span>Version Basic</span><strong>v5.9</strong></div>
+            </div>
+            <div class="header-version">
+                <span>Version Advanced</span>
+                <strong>v1.5</strong>
+            </div>
+        </header>
+        <section id="dashboard">
+            <h1>Welcome Back velocityyy</h1>
+            <canvas id="activityChart"></canvas>
+            <a href="https://discord.gg/FERD7jkvjm" class="discord-button">Join Discord</a>
+        </section>
+        <footer>
+            <span>1.5</span>
+            <span class="status">ADVANCED</span>
+            <span>4/4/2024</span>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

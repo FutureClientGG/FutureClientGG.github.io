@@ -1,44 +1,111 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    display: flex;
+    background-color: #23272a;
+    color: #ffffff;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.sidebar {
+    width: 250px;
+    background-color: #2c2f33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #99aab5;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+nav a img {
+    margin-right: 10px;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #7289da;
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #36393f;
+    min-height: 100vh;
+    color: #ffffff;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
+.header-stats {
+    display: flex;
 }
 
-nav a {
-    text-decoration: none;
-    color: #7289da;
-    margin-left: 20px;
+.stat {
+    background-color: #2c2f33;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.stat img {
+    margin-bottom: 5px;
+}
+
+.header-version {
+    background-color: #2c2f33;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
-    margin-bottom: 50px;
+    background-color: #2c2f33;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h1 {
+    margin-top: 0;
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .discord-button {
@@ -49,8 +116,25 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .discord-button:hover {
     background-color: #677bc4;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c2f33;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer .status {
+    color: #7289da;
+    font-weight: bold;
 }
