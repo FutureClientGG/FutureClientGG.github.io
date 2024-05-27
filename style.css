@@ -50,12 +50,14 @@ nav.sidebar li {
 nav.sidebar a {
     color: #fff;
     text-decoration: none;
-    display: flex;
-    align-items: center;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
-nav.sidebar a img {
-    margin-right: 10px;
+nav.sidebar a:hover {
+    background-color: #555;
 }
 
 main {
@@ -70,7 +72,7 @@ section {
 .feature {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
