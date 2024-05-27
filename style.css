@@ -4,43 +4,35 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header, footer {
-    background-color: #333;
-    padding: 10px 20px;
+header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
-a {
-    color: #55aaff;
-    text-decoration: none;
+.feature {
+    margin-bottom: 2em;
 }
 
-a:hover, button:hover {
-    background-color: #55aaff;
-    border-radius: 8px;
-}
-
-button {
+.button {
     background-color: #444;
     color: #ddd;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #222;
+.button:hover {
+    background-color: #55aaff;
 }
