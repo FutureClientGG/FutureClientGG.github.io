@@ -1,48 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Client</title>
+    <title>Future</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">Future Client</div>
-        <nav>
-            <a href="#dashboard" class="active"><img src="icons/dashboard.svg" alt="Dashboard">Dashboard</a>
-            <a href="#purchase"><img src="icons/cart.svg" alt="Purchase">Purchase</a>
-            <a href="#tickets"><img src="icons/tickets.svg" alt="Tickets">Tickets</a>
-            <a href="#settings"><img src="icons/settings.svg" alt="Settings">Settings</a>
-            <a href="#logout"><img src="icons/logout.svg" alt="Logout">Logout</a>
-        </nav>
-    </div>
-    <div class="main-content">
-        <header>
-            <div class="header-stats">
-                <div class="stat"><img src="icons/user.svg" alt="Users"><span>Total Users</span><strong>76.4k</strong></div>
-                <div class="stat"><img src="icons/launch.svg" alt="Launches"><span>Total Launches</span><strong>662k</strong></div>
-                <div class="stat"><img src="icons/download.svg" alt="Downloads"><span>Total Downloads</span><strong>263k</strong></div>
-                <div class="stat"><img src="icons/version.svg" alt="Version"><span>Version Basic</span><strong>v5.9</strong></div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">FUTURE V1</div>
+            <ul class="nav">
+                <li class="nav-item" data-page="home">Home</li>
+                <li class="nav-item" data-page="modules">Modules</li>
+                <li class="nav-item" data-page="configs">Configs</li>
+                <li class="nav-item" data-page="settings">Settings</li>
+                <li class="nav-item" data-page="logout">Logout</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="user-info">User ID: 69</div>
+                <div class="version">Version 1.1</div>
             </div>
-            <div class="header-version">
-                <span>Version Advanced</span>
-                <strong>v1.5</strong>
+            <div class="content" id="content">
+                Hello!
             </div>
-        </header>
-        <section id="dashboard">
-            <h1>Welcome Back velocityyy</h1>
-            <canvas id="activityChart"></canvas>
-            <a href="https://discord.gg/FERD7jkvjm" class="discord-button">Join Discord</a>
-        </section>
-        <footer>
-            <span>1.5</span>
-            <span class="status">ADVANCED</span>
-            <span>4/4/2024</span>
-        </footer>
+        </div>
     </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
