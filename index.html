@@ -1,35 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Future Client</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="logo">FUTURE V1</div>
-            <ul class="nav">
-                <li class="nav-item" data-page="home">Home</li>
-                <li class="nav-item" data-page="modules">Modules</li>
-                <li class="nav-item" data-page="configs">Configs</li>
-                <li class="nav-item" data-page="settings">Settings</li>
-                <li class="nav-item" data-page="logout">Logout</li>
-            </ul>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Future Client</h1>
         </div>
-        <div class="main-content">
-            <div class="top-bar">
-                <div class="user-info">User ID: 69</div>
-                <div class="version">Version 1.1</div>
+        <ul>
+            <li><a href="#about" data-target="about"><img src="icons/about.svg" alt="About"> About</a></li>
+            <li><a href="#features" data-target="features"><img src="icons/features.svg" alt="Features"> Features</a></li>
+            <li><a href="#updates" data-target="updates"><img src="icons/updates.svg" alt="Updates"> Updates</a></li>
+            <li><a href="#contact" data-target="contact"><img src="icons/contact.svg" alt="Contact"> Contact</a></li>
+            <li><a href="https://discord.gg/tvMBDcdTQd"><img src="icons/discord.svg" alt="Discord"> Discord</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="about" class="content-section active fade-in">
+            <h2>About Future Client</h2>
+            <p>Future Client is a state-of-the-art vape dedicated executor, combining the best of both worlds. Inject cheats and access the client seamlessly, just like Minecraft cheats.</p>
+        </div>
+        <div id="features" class="content-section fade-in">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Default</h3>
+                <p>Access to various configs with some limitations.</p>
             </div>
-            <div class="content" id="content">
-                Hello!
+            <div class="feature">
+                <h3>Premium</h3>
+                <p>Special custom modules. Limited access to the "Config AI". Access to the Premium Config Library. Extended limits on tabs and configs.</p>
             </div>
+            <div class="feature">
+                <h3>Developer</h3>
+                <p>All Premium features. Unlimited AI access. Early access to new features. Advanced tools for developers.</p>
+            </div>
+        </div>
+        <div id="updates" class="content-section fade-in">
+            <h2>Updates</h2>
+            <p>Stay tuned for the latest updates on Future Client. We are constantly improving and adding new features.</p>
+        </div>
+        <div id="contact" class="content-section fade-in">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out to us.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
