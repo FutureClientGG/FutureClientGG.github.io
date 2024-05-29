@@ -1,38 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.nav-item');
-    const content = document.getElementById('content');
+// script.js
 
-    navItems.forEach(item => {
-        item.addEventListener('click', function() {
-            navItems.forEach(nav => nav.classList.remove('active'));
-            this.classList.add('active');
-            loadPage(this.dataset.page);
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.sidebar ul li a[data-target]');
+    const sections = document.querySelectorAll('.content-section');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-target');
+            sections.forEach(section => {
+                section.classList.remove('active', 'fade-in');
+                if (section.id === targetId) {
+                    section.classList.add('active', 'fade-in');
+                }
+            });
         });
     });
+});
 
-    function loadPage(page) {
-        switch(page) {
-            case 'home':
-                content.innerHTML = '<h1>Home</h1><p>The amount of people that have viewed the website will show up in this tab, so will the amount of people who have purchased Future Client.</p>';
-                break;
-            case 'modules':
-                content.innerHTML = '<h1>Modules</h1><p>Future Client\'s modules will show up in this tab.</p>';
-                break;
-            case 'configs':
-                content.innerHTML = '<h1>Configs</h1><p>Configs for Future Client will show up in this tab.</p>';
-                break;
-            case 'settings':
-                content.innerHTML = '<h1>Settings</h1><p>The abilitiy to change the theme from dark to white & more will show up in this tab when Future Client is ready for release/purchase.</p>';
-                break;
-            case 'logout':
-                content.innerHTML = '<h1>Logout</h1><p>You have been logged out. (not rly)</p>';
-                break;
-            default:
-                content.innerHTML = '<h1>Welcome!</h1><p>Click any tab to continue to the demo of Future Client.</p>';
-                break;
-
-        }
-    }
-
-    loadPage();
+// Handle form submission
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Form submitted successfully!');
+    // You can add AJAX form submission here
 });
