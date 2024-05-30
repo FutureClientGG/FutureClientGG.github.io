@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0000ff, #8a2be2); /* Blue to purple gradient */
-    color: #fff; /* Set default text color to white */
+    background: linear-gradient(135deg, #00008B, #8A2BE2); /* Match the provided image gradient */
+    color: #fff;
 }
 
 header {
-    background: linear-gradient(135deg, #0000ff, #8a2be2); /* Blue to purple gradient */
+    background: linear-gradient(135deg, #00008B, #8A2BE2);
     padding: 1rem;
     text-align: center;
 }
@@ -35,7 +35,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #8a2be2; /* Accent color */
+    color: #8a2be2;
 }
 
 header nav ul li img {
@@ -54,7 +54,7 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #fff; /* Ensure heading text color is white */
+    color: #fff;
 }
 
 .feature {
@@ -71,57 +71,9 @@ h2 {
     color: #fff;
 }
 
-/* Slider styles */
-.slider {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    background: #444;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
-    border-radius: 50%;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: #8a2be2; /* Accent color */
-}
-
 /* Footer styles */
 footer {
-    background: linear-gradient(135deg, #0000ff, #8a2be2); /* Blue to purple gradient */
+    background: linear-gradient(135deg, #00008B, #8A2BE2);
     padding: 1rem;
     text-align: center;
     color: white;
@@ -129,7 +81,7 @@ footer {
 
 /* General button styles */
 button {
-    border-radius: 8px;  /* Add rounded corners */
+    border-radius: 8px;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -138,6 +90,6 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background: #8a2be2;  /* Turn purple on hover */
+    background: #8a2be2;
     color: white;
 }
