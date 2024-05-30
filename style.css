@@ -3,81 +3,41 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
     background: #000;  /* Set background to black */
     color: #fff; /* Set default text color to white */
 }
 
-.sidebar {
-    width: 250px;
-    background: #333;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+    background: blue; /* Primary color */
     padding: 1rem;
-    position: fixed;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
+    text-align: center;
 }
 
-.logo h1 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.sidebar ul {
+header nav ul {
     list-style: none;
     padding: 0;
-    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.sidebar ul li {
-    width: 100%;
-    margin-bottom: 1rem;
+header nav ul li {
+    margin: 0 1rem;
 }
 
-.sidebar ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s;
-    border-radius: 8px;  /* Add rounded corners */
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.sidebar ul li a:hover {
-    background: #007bff;  /* Turn blue on hover */
+header nav ul li a:hover {
+    color: purple; /* Accent color */
 }
 
-.sidebar ul li img {
-    width: 24px;
-    margin-right: 1rem;
-}
-
-.content {
-    margin-left: 250px;
+main {
     padding: 2rem;
-    overflow-y: auto;
-    width: calc(100% - 250px);
-    position: relative;
-    transition: margin-left 0.5s ease-in-out;
-}
-
-.content-section {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    transform: translateY(20px);
-}
-
-.content-section.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
 }
 
 section {
@@ -96,54 +56,12 @@ h2 {
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
-    box-shadow:
-0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature h3 {
     margin-top: 0;
     color: #fff;
-}
-
-/* Motion blur effect */
-.content {
-    filter: blur(5px);
-    transition: filter 0.5s ease;
-}
-
-.content:hover {
-    filter: blur(0);
-}
-
-/* Fade-in effect for content */
-.content-section.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* General button styles */
-button {
-    border-radius: 8px;  /* Add rounded corners */
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-/* Button hover effect */
-button:hover {
-    background: #007bff;  /* Turn blue on hover */
-    color: white;
 }
 
 /* Slider styles */
@@ -191,5 +109,28 @@ button:hover {
 }
 
 .prev:hover, .next:hover {
-    background-color: #007bff;
+    background-color: purple; /* Accent color */
+}
+
+/* Footer styles */
+footer {
+    background: blue; /* Primary color */
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+/* General button styles */
+button {
+    border-radius: 8px;  /* Add rounded corners */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #007bff;  /* Turn blue on hover */
+    color: white;
 }
