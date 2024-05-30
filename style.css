@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #000;  /* Set background to black */
+    background: linear-gradient(135deg, #0000ff, #8a2be2); /* Blue to purple gradient */
     color: #fff; /* Set default text color to white */
 }
 
 header {
-    background: blue; /* Primary color */
+    background: linear-gradient(135deg, #0000ff, #8a2be2); /* Blue to purple gradient */
     padding: 1rem;
     text-align: center;
 }
@@ -30,10 +30,17 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul li a:hover {
-    color: purple; /* Accent color */
+    color: #8a2be2; /* Accent color */
+}
+
+header nav ul li img {
+    width: 24px;
+    margin-right: 0.5rem;
 }
 
 main {
@@ -109,12 +116,12 @@ h2 {
 }
 
 .prev:hover, .next:hover {
-    background-color: purple; /* Accent color */
+    background-color: #8a2be2; /* Accent color */
 }
 
 /* Footer styles */
 footer {
-    background: blue; /* Primary color */
+    background: linear-gradient(135deg, #0000ff, #8a2be2); /* Blue to purple gradient */
     padding: 1rem;
     text-align: center;
     color: white;
@@ -131,6 +138,6 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background: #007bff;  /* Turn blue on hover */
+    background: #8a2be2;  /* Turn purple on hover */
     color: white;
 }
