@@ -40,38 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     showSlide(currentSlide);
-
-    // Modal functionality
-    const contactButton = document.getElementById('contact-button');
-    const modal = document.getElementById('contact-modal');
-    const closeModal = document.querySelector('.close');
-
-    contactButton.addEventListener('click', function() {
-        modal.style.display = 'block';
-    });
-
-    closeModal.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-
-    // Handle contact form submission
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Form submitted successfully!');
-        modal.style.display = 'none';
-        // You can add AJAX form submission here
-    });
-
-    // Handle feedback form submission
-    document.getElementById('feedback-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Feedback submitted successfully!');
-        // You can add AJAX form submission here
-    });
 });
