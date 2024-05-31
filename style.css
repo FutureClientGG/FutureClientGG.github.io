@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #8A2BE2, #FF1493); /* Gradient with primary as blueish purple pinkish and accent as darker purple pink */
+    background: linear-gradient(135deg, #8A2BE2, #FF1493); 
     color: #fff;
     height: 100vh;
     overflow-y: scroll;
@@ -72,7 +72,7 @@ footer {
     color: white;
 }
 
-/* Add scroll effect */
+/* Add scroll effect thing */
 html, body {
     scroll-behavior: smooth;
 }
